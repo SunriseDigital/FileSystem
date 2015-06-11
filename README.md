@@ -66,6 +66,9 @@ function someCallBack($file_path, $arg1, $arg2){
 }
 ```
 
+コールバックは`is_callable`が`true`になればなんでもOKです。当たり前ですが`FileSystem`のメンバー関数である必要はありません。
+
+
 ### ユーティリティー関数
 
 よく使うであろうフィルター関数をいくつか作りました。
