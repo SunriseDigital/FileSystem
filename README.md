@@ -1,5 +1,8 @@
 # FileSystem
 
+[![Build Status](https://travis-ci.org/SunriseDigital/FileSystem.svg?branch=master)](https://travis-ci.org/SunriseDigital/FileSystem)
+
+
 [あの評判の悪い本](http://www.amazon.co.jp/%E9%96%A2%E6%95%B0%E5%9E%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AB%E7%9B%AE%E8%A6%9A%E3%82%81%E3%81%9F-IQ145%E3%81%AE%E5%A5%B3%E5%AD%90%E9%AB%98%E6%A0%A1%E7%94%9F%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8B%E3%82%89%E5%8F%97%E3%81%91%E3%81%9F%E7%89%B9%E8%A8%935%E6%97%A5%E9%96%93-%E5%B2%A1%E9%83%A8-%E5%81%A5/dp/4798043761)に触発されて関数プログラミングチックなファイルを集めるクラスを作成してみました。
 
 といっても、下記の特徴を持ってるだけですが・・・
