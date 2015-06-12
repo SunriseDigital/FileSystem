@@ -26,7 +26,7 @@ $area_dirs
   ->map('display');
 
 $area_dirs
-  ->children('FileSystem::regex', '@^sp|www2?$@')
+  ->children('FileSystem::nameMatch', '@^sp|www2?$@')
   ->children('FileSystem::nameIs', 'Web.config.tpl')
   ->map('display');
 ```
@@ -77,7 +77,7 @@ function someCallBack($file_path, $arg1, $arg2){
 | ------ | ---- |
 | nameIs | ファイル名によるフィルタ |
 | hasChild | 直下に特定の名前のエントリーがあるディレクトリを取得 |
-| regex | 正規表現によるフィルター |
+| nameMatch | 正規表現によるフィルター |
 
 
 

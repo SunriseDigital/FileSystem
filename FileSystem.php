@@ -145,7 +145,7 @@ class FileSystem
     return $last_name == $name;
   }
 
-  public static function regex($entry, $pattern){
+  public static function nameMatch($entry, $pattern){
     $paths = explode(DIRECTORY_SEPARATOR, $entry);
     $last_name = $paths[count($paths) - 1];
 
