@@ -130,6 +130,11 @@ class FileSystem
   }
 
   ////////////Utility function
+  public static function getLastName($entry){
+    $paths = explode(DIRECTORY_SEPARATOR, $entry);
+    return $paths[count($paths) - 1];
+  }
+
   public static function hasChild($entry, $childname){
     if(!is_dir($entry)){
       return false;
@@ -139,16 +144,10 @@ class FileSystem
   }
 
   public static function nameIs($entry, $name){
-    $paths = explode(DIRECTORY_SEPARATOR, $entry);
-    $last_name = $paths[count($paths) - 1];
-
-    return $last_name == $name;
+    return FileSystem::getLastName($entry) == $name;
   }
 
   public static function nameMatch($entry, $pattern){
-    $paths = explode(DIRECTORY_SEPARATOR, $entry);
-    $last_name = $paths[count($paths) - 1];
-
-    return (bool) preg_match($pattern, $last_name);
+    return (bool) preg_match($pattern, FileSystem::getLastName($entry));
   }
 }
